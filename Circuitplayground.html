@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Quantum Gates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Quantum Gates</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quantum Mechanics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Circuitplayground.html">Circuit Playground</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Applications</a>
+            </li>
+  </nav>  
+  
+  <div class="home-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Quantum Gates Introduction</h1>
+                <p>Welcome to the magical world of quantum gates, where the tiniest particles of the universe dance to the rhythm of quantum mechanics! Are you ready to dive into this fascinating realm where the rules of classical physics no longer apply? Buckle up, because we're about to embark on an enchanting journey through the land of qubits and quantum gates.
+
+                    In this whimsical world, qubits are the stars of the show. Unlike their classical cousins, the bits, qubits can be in a superposition of states, both 0 and 1 simultaneously. It's like having your cake and eating it too!
+                    
+                    Now, let's introduce the wizards that control these qubits - the quantum gates. These gates are the magical spells that manipulate qubits and create the foundation for quantum computing. Here are some of the most famous ones:
+                    <ol>
+                    <li>NOT Gate: The trickster of the quantum realm, this gate flips a qubit's state, turning 0s into 1s and vice versa. It's like a mischievous fairy that swaps your socks just when you're about to put them on!</li> 
+                    
+                    <li>Hadamard Gate: The mystical shapeshifter, this gate transforms a qubit into a superposition of states, allowing it to explore multiple realities at once. Imagine being able to attend two parties simultaneously - that's the power of the Hadamard Gate!</li> 
+                    
+                    <li>CNOT Gate: The puppet master, this gate entangles two qubits, linking their fates together. When one qubit changes its state, the other follows suit, like synchronized swimmers in the quantum pool.</li> 
+                    
+                    <li>Toffoli Gate: The grand conductor, this gate orchestrates the actions of three qubits, changing the state of one only if the other two are in a specific state. It's like a wise wizard who only reveals secrets when certain conditions are met.</li> 
+                    </ol>
+                    
+                    As you delve deeper into the enchanting world of quantum gates, you'll discover more magical spells and mystical creatures. So, grab your wand and join us on this spellbinding adventure to unlock the secrets of the quantum universe!</p>
+                <p>Click on the button below to learn more about the Quantum gates.</p>
+                <button onclick="window.location.href='https://en.wikipedia.org/wiki/Quantum_logic_gate#NOT_gate'">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-info">
+    <div class="container">
+    <h1>Quantum Gates</h1>
+    <h2>(A) Pauli Gates: X,Y,Z</h2>
+    <div class="gates">
+    <h3>(1) Pauli-X: NOT Gate</h3>
+    <p>Enter a qubit state (0 or 1):</p>
+    <input type="text" id="qubitx" maxlength="1">
+    <p>Output:</p>
+    <p id="resultx"></p>
+    <button onclick="applyXGate()">Apply Pauli-X (NOT) Gate</button>
+    </div>
+    </div>
+    </div>
+
+    <div class="home-info">
+    <div class="container">
+    <div class="gates">
+    <h3>(2) Pauli-Y</h3>
+    <p>Enter a qubit state (0 or 1):</p>
+    <input type="text" id="qubity" maxlength="1">
+    <p>Output:</p>
+    <p id="resulty"></p>
+    <button onclick="applyYGate()">Apply Pauli-Y Gate</button>
+    </div>
+    </div>
+    </div>
+
+    <div class="home-info">
+    <div class="container">
+    <div class="gates">
+    <h3>(3) Pauli-Z</h3>
+    <p>Enter a qubit state (0 or 1):</p>
+    <input type="text" id="qubitz" maxlength="1">
+    <p>Output:</p>
+    <p id="resultz"></p>
+    <button onclick="applyZGate()">Apply Pauli-Z Gate</button>
+    </div>
+    </div>
+    </div>
+
+    <div class="home-info">
+    <div class="container">
+    <div class="gates">
+    <h3>(4) Hadamard Gate</h3>
+    <p>Enter a qubit state (0 or 1):</p>
+    <input type="text" id="qubitH" maxlength="1">
+    <p>Output:</p>
+    <p id="resultH"></p>
+    <button onclick="applyHadamardGate()">Apply Hadamard Gate</button>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
