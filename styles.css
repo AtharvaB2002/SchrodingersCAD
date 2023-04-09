@@ -152,6 +152,7 @@ section:not(:last-child) {
   h1 {
     font-size: 48px;
     margin-bottom: 10px;
+    margin-top: 60px;
     text-decoration: underline;
   }
 
@@ -184,7 +185,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 
